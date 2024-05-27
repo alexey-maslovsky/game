@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    * {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 2px;
+      overflow: hidden;
+    }
+
+    #txt {
+      color: rgba(66, 66, 66);
+      font-size: 30px;
+    }
+
+    #btn {
+      border: 1px solid rgba(66, 66, 66);
+      border-color: rgba(0, 106, 255, 0.8);
+      background-color: white;
+      color: rgba(66, 66, 66);
+      padding: 15px 25px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    #btn:hover {
+      background-color: rgba(0, 106, 255, 0.05);
+    }
+
+    #img {
+      width: 500px;
+    }
+
+    span {
+      color: rgba(0, 106, 255, 0.8);
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <button id="btn">
+    START <span>THE GAME</span>
+  </button>
+  <div id="txt" style="display: none;">ПОШЕЛ НА ХУЙ!</div>
+  <img src="/loader.gif" id="img" style="display: none;" />
+  <script src="main.js"></script>
+</body>
+</html>
